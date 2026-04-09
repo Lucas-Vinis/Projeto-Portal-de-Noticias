@@ -13,3 +13,19 @@
 .gap-16 {
     gap: 16px;
 }
+
+.txt-xg {
+    font: var(--h1);
+}
+
+.txt-gg {
+    font: var(--h2);
+}
+
+.txt-g {
+    font: var(--h3);
+}
+
+.txt-p {
+    font: var(--txt-sm);
+}
