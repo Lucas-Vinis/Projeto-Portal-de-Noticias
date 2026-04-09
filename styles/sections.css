@@ -31,6 +31,11 @@
 
             h2 {
                 margin-top: 8px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; /* Número de linhas */
+                -webkit-box-orient: vertical;
+                overflow: hidden; /* Esconde o texto extra */
+                text-overflow: ellipsis; /* Adiciona '...' */
             }
         }
     }
