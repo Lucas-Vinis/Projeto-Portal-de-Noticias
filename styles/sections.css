@@ -1,3 +1,27 @@
+section header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--span);
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            background-image: url(../assets/icon/Vector-white.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+        }
+
+        &:hover span {
+            background-image: url(../assets/icon/Vector-blue.svg);
+        }
+    }
+}
+
 #featured {
     img{
         height: 100%;
@@ -37,6 +61,36 @@
                 overflow: hidden; /* Esconde o texto extra */
                 text-overflow: ellipsis; /* Adiciona '...' */
             }
+        }
+    }
+}
+
+#week {
+
+    &>div {
+        grid-template-columns: repeat(4, 292px);
+
+        figure p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3; 
+            -webkit-box-orient: vertical;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            margin-top: 8px;
+            font-weight: 800;
+        }
+    }
+    img{
+        height: 160px;
+    }
+
+    figure {
+        position: relative;
+
+        .tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
         }
     }
 }
